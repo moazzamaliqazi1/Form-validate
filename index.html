@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="style.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Form Validate</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <h2>Information Form</h2>
-        <form action="" id="myform" class="form">
-            
-            <label>Name : </label>
-            <input type="text" id="name"  class="name" ><br>
-            <label>Date Of Birth :</label>
-            <input type="date" id="dob"  class="dob"><br>
-            <label>Start Date :</label>
-            <input  type="date" id="today"  class="today"><br>
-            <label for="">End Date :</label>
-            <input type="date" id="tomorrow" class="tomorrow"><br>
-            <label for="">Upload :</label>
-            <input name="userfile" type="file" id="file" accept="application/pdf" class="file"  /><br>
+      <h2 style="background-color: black; color: white">Information Form</h2>
+      <form action="" id="myform" class="form">
+        <label>Name : </label>
+        <input
+          type="text"
+          id="name"
+          class="name"
+          minlength="6"
+          maxlength="15"
+        /><br />
+        <label for="phone"> phone number:</label>
+        <input
+          type="text"
+          id="phone"
+          class="phone"
+          name="phone"
+          maxlength="12"
+          oninput="isPhoneValid()"
+        /><br />
+        <label>Date Of Birth :</label>
+        <input type="date" id="dob" class="dob" /><br />
+        <label>Start Date :</label>
+        <input type="date" id="today" class="today" /><br />
+        <label for="">End Date :</label>
+        <input type="date" id="tomorrow" class="tomorrow" /><br />
+        <label for="">Upload :</label>
+        <input
+          name="userfile"
+          type="file"
+          id="file"
+          accept="application/pdf"
+          class="file"
+        /><br />
 
-           
-           
-
-            <input type="submit" onclick="myFun()" value="submit"  class="submit">
-        </form>
-        <a href="" id="link">Download </a>
+        <input type="submit" onclick="myFun()" value="submit" class="submit" />
+      </form>
+      <a href="" id="link">Download </a>
     </div>
 
-
     <script src="script.js"></script>
-    <!-- <script src="jquery.js"></script> -->
-
-
-</body>
+  </body>
 </html>

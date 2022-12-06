@@ -9,7 +9,7 @@ body{
 }
 div.main{
     background-color: aliceblue;
-    height: 335px;
+    height: 420px;
     text-align: center;
     width: 50%;
     margin: 200px 0px 0px 379px
@@ -23,10 +23,13 @@ input{
     height: 30px;
     border: none;
     border-radius: 10px;
-    background-color: #f1f3f4;
+    background-color: #cacaca;
 }
 .name{
     margin: 0px 0px 0px 53px;
+}
+.phone{
+    margin-left: 6px;
 }
 .dob{
     margin: 14px 0px 0px px
@@ -40,6 +43,7 @@ input{
 .file{
     margin: 10px 0px 0px 48px;
     background-color: #f0f8ff;
+    border-radius: 0px;
 }
 .submit{
     background-color: #45a049;
